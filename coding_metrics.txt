@@ -1,0 +1,2926 @@
+Messages
+========
+
+blog/admin.py
+  Line: 6
+    pep8: E231 / missing whitespace after ',' (col 29)
+    pep8: E251 / unexpected spaces around keyword / parameter equals (col 49)
+
+blog/forms.py
+  Line: None
+    pep8: E101 / indentation contains mixed spaces and tabs (col 1)
+  Line: 6
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 7
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 8
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 9
+    pep8: W191 / indentation contains tabs (col 1)
+    pep8: E203 / whitespace before ':' (col 28)
+    pep8: E501 / line too long (196 > 99 characters) (col 100)
+    pep8: E231 / missing whitespace after ',' (col 160)
+  Line: 11
+    pep8: E302 / expected 2 blank lines, found 1 (col 1)
+  Line: 13
+    pep8: W191 / indentation contains tabs (col 1)
+    pep8: E501 / line too long (121 > 99 characters) (col 100)
+  Line: 15
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 16
+    pep8: W191 / indentation contains tabs (col 1)
+    pep8: E301 / expected 1 blank line, found 0 (col 2)
+  Line: 17
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 19
+    pep8: W191 / indentation contains tabs (col 1)
+    pep8: E203 / whitespace before ',' (col 55)
+    pylint: bad-whitespace / No space allowed before comma
+		fields = ['title', 'content', 'description', 'image' ,  'tags']
+                                                       ^
+  Line: 20
+    pep8: W191 / indentation contains tabs (col 1)
+    pep8: E201 / whitespace after '{' (col 14)
+    pep8: E501 / line too long (116 > 99 characters) (col 100)
+    pylint: bad-whitespace / No space allowed after bracket
+		widgets = { 'title': forms.TextInput(attrs={'placeholder': 'Keep it short and simple.', 'class': 'form-control'}),
+            ^
+  Line: 21
+    pep8: W191 / indentation contains tabs (col 1)
+    pep8: E128 / continuation line under-indented for visual indent (col 6)
+    pep8: E231 / missing whitespace after ':' (col 45)
+  Line: 22
+    pep8: W191 / indentation contains tabs (col 1)
+    pep8: E128 / continuation line under-indented for visual indent (col 6)
+    pep8: E501 / line too long (120 > 99 characters) (col 100)
+    pep8: E231 / missing whitespace after ',' (col 107)
+  Line: 23
+    pep8: W293 / blank line contains whitespace (col 1)
+  Line: 24
+    pep8: W191 / indentation contains tabs (col 1)
+    pep8: E124 / closing bracket does not match visual indentation (col 3)
+  Line: 26
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 27
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 28
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 29
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 30
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 32
+    pep8: E302 / expected 2 blank lines, found 1 (col 1)
+  Line: 34
+    pep8: W191 / indentation contains tabs (col 1)
+    pep8: E501 / line too long (121 > 99 characters) (col 100)
+  Line: 36
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 37
+    pep8: W191 / indentation contains tabs (col 1)
+    pep8: E301 / expected 1 blank line, found 0 (col 2)
+  Line: 38
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 41
+    pep8: W191 / indentation contains tabs (col 1)
+    pep8: E303 / too many blank lines (2) (col 3)
+    pep8: E203 / whitespace before ',' (col 40)
+    pylint: bad-whitespace / No space allowed before comma
+		fields = ['title', 'content', 'image' , 'tags']
+                                        ^
+  Line: 42
+    pep8: W191 / indentation contains tabs (col 1)
+    pep8: E201 / whitespace after '{' (col 14)
+    pep8: E501 / line too long (116 > 99 characters) (col 100)
+    pylint: bad-whitespace / No space allowed after bracket
+		widgets = { 'title': forms.TextInput(attrs={'placeholder': 'Keep it short and simple.', 'class': 'form-control'}),
+            ^
+  Line: 43
+    pep8: W191 / indentation contains tabs (col 1)
+    pep8: E128 / continuation line under-indented for visual indent (col 6)
+    pep8: E501 / line too long (107 > 99 characters) (col 100)
+  Line: 45
+    pep8: W191 / indentation contains tabs (col 1)
+    pep8: E124 / closing bracket does not match visual indentation (col 3)
+  Line: 47
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 48
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 49
+    pep8: W191 / indentation contains tabs (col 1)
+
+blog/functions.py
+  Line: 2
+    pylint: wrong-import-order / third party import "from django.utils.html import strip_tags, escape" should be placed before "from log.models import UserProfile, Notification"
+    pylint: unused-import / Unused strip_tags imported from django.utils.html
+  Line: 4
+    pep8: N802 / function name should be lowercase (col 5)
+    pep8: E302 / expected 2 blank lines, found 1 (col 1)
+    pylint: invalid-name / Function name "processBlog" doesn't conform to snake_case naming style
+  Line: 6
+    pep8: E201 / whitespace after '[' (col 17)
+    pep8: E202 / whitespace before ']' (col 62)
+    pylint: bad-whitespace / No space allowed after bracket
+    mentions = [ t for t in text.split() if t.startswith('@') ]
+               ^
+  Line: 11
+    pylint: bare-except / No exception type(s) specified (col 8)
+  Line: 14
+    pep8: E501 / line too long (116 > 99 characters) (col 100)
+  Line: 24
+    pep8: N802 / function name should be lowercase (col 5)
+    pep8: E302 / expected 2 blank lines, found 1 (col 1)
+    pylint: invalid-name / Function name "processPost" doesn't conform to snake_case naming style
+  Line: 26
+    pep8: E201 / whitespace after '[' (col 17)
+    pep8: E202 / whitespace before ']' (col 62)
+    pylint: bad-whitespace / No space allowed after bracket
+    mentions = [ t for t in text.split() if t.startswith('@') ]
+               ^
+  Line: 31
+    pylint: bare-except / No exception type(s) specified (col 8)
+  Line: 34
+    pep8: E501 / line too long (116 > 99 characters) (col 100)
+  Line: 44
+    pep8: N802 / function name should be lowercase (col 5)
+    pep8: E302 / expected 2 blank lines, found 1 (col 1)
+    pylint: invalid-name / Function name "processComment" doesn't conform to snake_case naming style
+  Line: 46
+    pep8: E201 / whitespace after '[' (col 17)
+    pep8: E202 / whitespace before ']' (col 62)
+    pylint: bad-whitespace / No space allowed after bracket
+    mentions = [ t for t in text.split() if t.startswith('@') ]
+               ^
+  Line: 51
+    pylint: bare-except / No exception type(s) specified (col 8)
+  Line: 54
+    pep8: E501 / line too long (116 > 99 characters) (col 100)
+
+blog/models.py
+  Line: 4
+    pylint: wrong-import-order / standard import "from datetime import datetime" should be placed before "from django.db import models"
+  Line: 5
+    pylint: import-error / Unable to import 'django.urls'
+  Line: 6
+    pylint: reimported / Reimport 'reverse' (imported line 5)
+    pyflakes: F811 / redefinition of unused 'reverse' from line 5 (col 1)
+  Line: 8
+    pylint: unused-import / Unused User imported from django.contrib.auth.models
+  Line: 10
+    pylint: unused-import / Unused RichTextField imported from ckeditor.fields
+  Line: 17
+    pep8: E302 / expected 2 blank lines, found 1 (col 1)
+    pylint: model-missing-unicode / No __unicode__ method on model (Tag)
+  Line: 18
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 20
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 21
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 24
+    pylint: model-missing-unicode / No __unicode__ method on model (BlogPost)
+  Line: 25
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 26
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 27
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 28
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 29
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 30
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 31
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 32
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 33
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 34
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 37
+    pep8: W191 / indentation contains tabs (col 1)
+    pep8: E303 / too many blank lines (2) (col 2)
+  Line: 38
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 39
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 40
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 41
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 42
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 43
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 44
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 46
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 47
+    pep8: W191 / indentation contains tabs (col 1)
+    pep8: E126 / continuation line over-indented for hanging indent (col 4)
+  Line: 48
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 49
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 50
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 51
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 52
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 53
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 54
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 56
+    pep8: W191 / indentation contains tabs (col 1)
+    pep8: E126 / continuation line over-indented for hanging indent (col 3)
+  Line: 58
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 60
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 61
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 64
+    pep8: W191 / indentation contains tabs (col 1)
+    pep8: E303 / too many blank lines (2) (col 2)
+    pylint: arguments-differ / Parameters differ from overridden 'save' method (col 1)
+    pep8: E231 / missing whitespace after ',' (col 22)
+  Line: 65
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 66
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 67
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 70
+    pep8: W191 / indentation contains tabs (col 1)
+    pep8: E303 / too many blank lines (2) (col 2)
+  Line: 71
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 73
+    pep8: W191 / indentation contains tabs (col 1)
+    pyflakes: F811 / redefinition of unused 'get_absolute_url' from line 60 (col 2)
+  Line: 74
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 76
+    pep8: E302 / expected 2 blank lines, found 1 (col 1)
+    pylint: model-missing-unicode / No __unicode__ method on model (Comments)
+  Line: 77
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 78
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 79
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 80
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 81
+    pep8: W191 / indentation contains tabs (col 1)
+    pep8: E501 / line too long (113 > 99 characters) (col 100)
+  Line: 82
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 84
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 85
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 88
+    pylint: model-missing-unicode / No __unicode__ method on model (Upvote)
+  Line: 89
+    pep8: W191 / indentation contains tabs (col 1)
+    pep8: E203 / whitespace before ',' (col 42)
+    pep8: E202 / whitespace before ')' (col 56)
+    pep8: E251 / unexpected spaces around keyword / parameter equals (col 49)
+  Line: 90
+    pep8: W191 / indentation contains tabs (col 1)
+    pep8: E203 / whitespace before ',' (col 44)
+    pep8: E251 / unexpected spaces around keyword / parameter equals (col 51)
+  Line: 92
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 93
+    pep8: W191 / indentation contains tabs (col 1)
+    pep8: E231 / missing whitespace after ',' (col 29)
+  Line: 95
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 96
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 98
+    pep8: E302 / expected 2 blank lines, found 1 (col 1)
+    pylint: model-missing-unicode / No __unicode__ method on model (CommentUpvote)
+  Line: 99
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 100
+    pep8: W191 / indentation contains tabs (col 1)
+    pep8: E203 / whitespace before ',' (col 44)
+    pep8: E251 / unexpected spaces around keyword / parameter equals (col 51)
+  Line: 102
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 103
+    pep8: W191 / indentation contains tabs (col 1)
+    pep8: E231 / missing whitespace after ',' (col 31)
+  Line: 105
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 106
+    pep8: W191 / indentation contains tabs (col 1)
+
+blog/urls.py
+  Line: 8
+    pep8: E225 / missing whitespace around operator (col 14)
+  Line: 10
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 11
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 13
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 14
+    pep8: W191 / indentation contains tabs (col 1)
+    pep8: E203 / whitespace before ',' (col 49)
+    pylint: bad-whitespace / No space allowed before comma
+	url(r'^(?P<slug>[\w-]+)/edit$', views.post_edit , name='post-edit'),
+                                                 ^
+  Line: 15
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 17
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 18
+    pep8: W191 / indentation contains tabs (col 1)
+    pep8: E203 / whitespace before ',' (col 54)
+    pylint: bad-whitespace / No space allowed before comma
+	url(r'^blog/(?P<slug>[\w-]+)/edit$', views.blog_edit , name='blog-edit'),
+                                                      ^
+  Line: 19
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 21
+    pep8: W191 / indentation contains tabs (col 1)
+    pep8: E203 / whitespace before ',' (col 62)
+    pylint: bad-whitespace / No space allowed before comma
+	url(r'^(?P<slug>[\w-]+)/delete$', views.BlogDelete.as_view() , name='blog-delete'),
+                                                              ^
+  Line: 22
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 23
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 24
+    pep8: W191 / indentation contains tabs (col 1)
+
+blog/views.py
+  Line: None
+    pep8: E101 / indentation contains mixed spaces and tabs (col 1)
+  Line: 4
+    pylint: unused-import / Unused DetailView imported from django.views.generic
+  Line: 5
+    pylint: unused-import / Unused Http404 imported from django.http
+  Line: 10
+    pylint: wrong-import-order / first party import "from log.models import UserProfile, Notification" should be placed before "from .models import BlogPost, Upvote, Tag, CommentUpvote, Comments"
+  Line: 11
+    pylint: import-error / Unable to import 'django.contrib.auth.mixins'
+    pylint: ungrouped-imports / Imports from package django are not grouped
+    pylint: wrong-import-order / third party import "from django.contrib.auth.mixins import LoginRequiredMixin" should be placed before "from log.models import UserProfile, Notification"
+  Line: 12
+    pylint: wrong-import-order / third party import "from django.contrib.auth.models import User" should be placed before "from log.models import UserProfile, Notification"
+  Line: 13
+    pylint: wrong-import-order / third party import "from django.utils import timezone" should be placed before "from log.models import UserProfile, Notification"
+  Line: 14
+    pylint: wrong-import-order / third party import "from django.core.serializers import serialize" should be placed before "from log.models import UserProfile, Notification"
+    pylint: unused-import / Unused serialize imported from django.core.serializers
+  Line: 15
+    pylint: wrong-import-order / third party import "from django.core.serializers.json import DjangoJSONEncoder" should be placed before "from log.models import UserProfile, Notification"
+    pylint: unused-import / Unused DjangoJSONEncoder imported from django.core.serializers.json
+  Line: 18
+    pylint: reimported / Reimport 'DetailView' (imported line 4)
+    pylint: wrong-import-order / third party import "from django.views.generic import DetailView" should be placed before "from log.models import UserProfile, Notification"
+    pyflakes: F401 / 'django.views.generic.DetailView' imported but unused (col 1)
+    pyflakes: F811 / redefinition of unused 'DetailView' from line 4 (col 1)
+  Line: 19
+    pylint: wrong-import-order / third party import "from django.views.generic.edit import DeleteView" should be placed before "from log.models import UserProfile, Notification"
+  Line: 26
+    pep8: E302 / expected 2 blank lines, found 1 (col 1)
+    pylint: too-many-ancestors / Too many ancestors (9/7)
+  Line: 27
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 28
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 29
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 36
+    pep8: E302 / expected 2 blank lines, found 1 (col 1)
+  Line: 37
+    pep8: W191 / indentation contains tabs (col 1)
+    pylint: undefined-variable / Undefined variable 'Post' (col 26)
+  Line: 38
+    pep8: W191 / indentation contains tabs (col 1)
+    pep8: E231 / missing whitespace after ',' (col 23)
+  Line: 40
+    pep8: N802 / function name should be lowercase (col 5)
+    pep8: E302 / expected 2 blank lines, found 1 (col 1)
+    pylint: invalid-name / Function name "postDetailView" doesn't conform to snake_case naming style
+  Line: 41
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 43
+    pep8: W191 / indentation contains tabs (col 1)
+    pep8: E225 / missing whitespace around operator (col 6)
+  Line: 44
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 45
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 46
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 47
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 49
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 50
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 53
+    pep8: W191 / indentation contains tabs (col 1)
+    pep8: E303 / too many blank lines (2) (col 2)
+    pep8: E201 / whitespace after '(' (col 43)
+    pep8: E202 / whitespace before ')' (col 62)
+    pep8: E251 / unexpected spaces around keyword / parameter equals (col 49)
+  Line: 54
+    pep8: W191 / indentation contains tabs (col 1)
+    pep8: E203 / whitespace before ',' (col 59)
+    pep8: E251 / unexpected spaces around keyword / parameter equals (col 46)
+  Line: 55
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 56
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 57
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 58
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 59
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 60
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 61
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 62
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 63
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 65
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 66
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 67
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 68
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 69
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 70
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 71
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 72
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 73
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 74
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 75
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 76
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 77
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 78
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 79
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 80
+    pep8: W191 / indentation contains tabs (col 1)
+    pep8: E501 / line too long (186 > 99 characters) (col 100)
+  Line: 81
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 82
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 83
+    pep8: W191 / indentation contains tabs (col 1)
+    pep8: E501 / line too long (123 > 99 characters) (col 100)
+  Line: 85
+    pep8: W191 / indentation contains tabs (col 1)
+    pylint: bare-except / No exception type(s) specified (col 1)
+  Line: 86
+    pep8: W191 / indentation contains tabs (col 1)
+    pep8: E202 / whitespace before '}' (col 100)
+    pep8: E501 / line too long (102 > 99 characters) (col 100)
+    pylint: bad-whitespace / No space allowed before bracket
+		return render(request, 'post/post_detail_single.html', {'blog_detail': blog, 'comments': comments })
+                                                                                                    ^
+  Line: 91
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 92
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 93
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 94
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 95
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 96
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 97
+    pep8: W191 / indentation contains tabs (col 1)
+    pylint: redefined-outer-name / Redefining name 'post' from outer scope (line 36) (col 3)
+  Line: 98
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 99
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 100
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 102
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 103
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 105
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 106
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 107
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 110
+    pep8: W191 / indentation contains tabs (col 1)
+    pep8: E303 / too many blank lines (2) (col 2)
+    pep8: E231 / missing whitespace after ':' (col 59)
+  Line: 115
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 116
+    pep8: W191 / indentation contains tabs (col 1)
+    pylint: redefined-outer-name / Redefining name 'post' from outer scope (line 36) (col 1)
+  Line: 117
+    pep8: W191 / indentation contains tabs (col 1)
+    pep8: E712 / comparison to True should be 'if cond is True:' or 'if cond:' (col 17)
+    pylint: singleton-comparison / Comparison to True should be just 'expr' or 'expr is True' (col 4)
+  Line: 118
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 119
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 120
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 121
+    pep8: W191 / indentation contains tabs (col 1)
+    pep8: E203 / whitespace before ',' (col 50)
+    pep8: E231 / missing whitespace after ',' (col 51)
+  Line: 123
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 124
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 125
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 126
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 127
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 129
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 130
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 132
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 133
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 134
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 136
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 137
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 138
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 139
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 141
+    pep8: N802 / function name should be lowercase (col 5)
+    pep8: E302 / expected 2 blank lines, found 1 (col 1)
+    pylint: invalid-name / Function name "blogDetailView" doesn't conform to snake_case naming style
+  Line: 142
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 144
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 146
+    pep8: W191 / indentation contains tabs (col 1)
+    pep8: E225 / missing whitespace around operator (col 6)
+  Line: 147
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 148
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 149
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 150
+    pep8: W191 / indentation contains tabs (col 1)
+    pep8: E712 / comparison to False should be 'if cond is False:' or 'if not cond:' (col 17)
+    pylint: singleton-comparison / Comparison to False should be 'not expr' or 'expr is False' (col 4)
+  Line: 151
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 153
+    pep8: W191 / indentation contains tabs (col 1)
+    pep8: E201 / whitespace after '(' (col 43)
+    pep8: E202 / whitespace before ')' (col 62)
+    pep8: E251 / unexpected spaces around keyword / parameter equals (col 49)
+  Line: 154
+    pep8: W191 / indentation contains tabs (col 1)
+    pep8: E203 / whitespace before ',' (col 59)
+    pep8: E251 / unexpected spaces around keyword / parameter equals (col 46)
+  Line: 155
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 156
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 157
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 158
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 159
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 160
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 161
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 162
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 163
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 166
+    pep8: W191 / indentation contains tabs (col 1)
+    pep8: E303 / too many blank lines (2) (col 3)
+  Line: 167
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 168
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 169
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 170
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 171
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 172
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 173
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 175
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 176
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 177
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 178
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 179
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 180
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 181
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 182
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 183
+    pep8: W191 / indentation contains tabs (col 1)
+    pep8: E501 / line too long (186 > 99 characters) (col 100)
+  Line: 184
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 185
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 186
+    pep8: W191 / indentation contains tabs (col 1)
+    pep8: E501 / line too long (123 > 99 characters) (col 100)
+  Line: 188
+    pep8: W191 / indentation contains tabs (col 1)
+    pylint: bare-except / No exception type(s) specified (col 1)
+  Line: 189
+    pep8: W191 / indentation contains tabs (col 1)
+    pep8: E202 / whitespace before '}' (col 100)
+    pep8: E501 / line too long (102 > 99 characters) (col 100)
+    pylint: bad-whitespace / No space allowed before bracket
+		return render(request, 'post/blog_detail_single.html', {'blog_detail': blog, 'comments': comments })
+                                                                                                    ^
+  Line: 193
+    pep8: E303 / too many blank lines (3) (col 1)
+  Line: 195
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 196
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 197
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 198
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 199
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 200
+    pep8: W191 / indentation contains tabs (col 1)
+    pylint: superfluous-parens / Unnecessary parens after 'print' keyword
+  Line: 201
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 202
+    pep8: W191 / indentation contains tabs (col 1)
+    pylint: redefined-outer-name / Redefining name 'post' from outer scope (line 36) (col 3)
+  Line: 203
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 204
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 205
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 208
+    pep8: W191 / indentation contains tabs (col 1)
+    pep8: E303 / too many blank lines (2) (col 4)
+  Line: 209
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 211
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 212
+    pep8: W191 / indentation contains tabs (col 1)
+    pep8: E251 / unexpected spaces around keyword / parameter equals (col 37)
+  Line: 213
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 214
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 215
+    pep8: W191 / indentation contains tabs (col 1)
+    pep8: E251 / unexpected spaces around keyword / parameter equals (col 29)
+    pylint: invalid-name / Variable name "t" doesn't conform to snake_case naming style (col 4)
+  Line: 216
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 217
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 220
+    pep8: W191 / indentation contains tabs (col 1)
+    pep8: E303 / too many blank lines (2) (col 2)
+    pep8: E231 / missing whitespace after ':' (col 59)
+  Line: 224
+    pep8: E303 / too many blank lines (3) (col 1)
+  Line: 226
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 227
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 228
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 229
+    pep8: W191 / indentation contains tabs (col 1)
+    pylint: redefined-outer-name / Redefining name 'post' from outer scope (line 36) (col 1)
+  Line: 230
+    pep8: W191 / indentation contains tabs (col 1)
+    pep8: E712 / comparison to False should be 'if cond is False:' or 'if not cond:' (col 17)
+    pylint: singleton-comparison / Comparison to False should be 'not expr' or 'expr is False' (col 4)
+  Line: 231
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 232
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 233
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 234
+    pep8: W191 / indentation contains tabs (col 1)
+    pep8: E203 / whitespace before ',' (col 50)
+    pep8: E231 / missing whitespace after ',' (col 51)
+  Line: 235
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 236
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 237
+    pep8: W191 / indentation contains tabs (col 1)
+    pylint: superfluous-parens / Unnecessary parens after 'print' keyword
+  Line: 238
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 239
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 240
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 241
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 243
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 244
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 246
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 247
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 248
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 249
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 250
+    pep8: W191 / indentation contains tabs (col 1)
+    pylint: invalid-name / Variable name "t" doesn't conform to snake_case naming style (col 5)
+  Line: 251
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 252
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 253
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 254
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 256
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 257
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 259
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 260
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 263
+    pylint: too-many-ancestors / Too many ancestors (11/7)
+  Line: 264
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 265
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 267
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 268
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 269
+    pep8: W191 / indentation contains tabs (col 1)
+    pylint: attribute-defined-outside-init / Attribute 'object' defined outside __init__ (col 2)
+  Line: 270
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 271
+    pep8: W191 / indentation contains tabs (col 1)
+    pylint: no-else-return / Unnecessary "else" after "return" (col 2)
+  Line: 272
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 274
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 275
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 276
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 277
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 278
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 282
+    pep8: N802 / function name should be lowercase (col 5)
+    pep8: E203 / whitespace before ':' (col 33)
+    pylint: bad-whitespace / No space allowed before :
+def toggleCommentUpvote(request) :
+                                 ^
+    pylint: invalid-name / Function name "toggleCommentUpvote" doesn't conform to snake_case naming style
+  Line: 284
+    pep8: E203 / whitespace before ':' (col 34)
+    pylint: superfluous-parens / Unnecessary parens after 'if' keyword
+    pylint: bad-whitespace / No space allowed before :
+    if (request.method == "POST") :
+                                  ^
+  Line: 288
+    pep8: E251 / unexpected spaces around keyword / parameter equals (col 49)
+  Line: 290
+    pep8: E203 / whitespace before ':' (col 32)
+    pylint: superfluous-parens / Unnecessary parens after 'if' keyword
+    pylint: bad-whitespace / No space allowed before :
+        if (comment_state == 0) :
+                                ^
+  Line: 291
+    pep8: E201 / whitespace after '(' (col 42)
+    pep8: E203 / whitespace before ',' (col 66)
+    pep8: E202 / whitespace before ')' (col 86)
+    pep8: E251 / unexpected spaces around keyword / parameter equals (col 51)
+  Line: 292
+    pep8: E203 / whitespace before ':' (col 13)
+    pylint: bad-whitespace / No space allowed before :
+        else :
+             ^
+  Line: 293
+    pep8: E201 / whitespace after '(' (col 39)
+    pep8: E203 / whitespace before ',' (col 63)
+    pep8: E202 / whitespace before ')' (col 83)
+    pep8: E251 / unexpected spaces around keyword / parameter equals (col 48)
+  Line: 294
+    pep8: E251 / unexpected spaces around keyword / parameter equals (col 59)
+  Line: 300
+    pep8: N802 / function name should be lowercase (col 5)
+    pylint: invalid-name / Function name "replyComment" doesn't conform to snake_case naming style
+  Line: 301
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 302
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 303
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 304
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 305
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 306
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 307
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 308
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 309
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 310
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 311
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 312
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 313
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 314
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 315
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 316
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 317
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 318
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 319
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 321
+    pep8: N802 / function name should be lowercase (col 5)
+    pep8: E302 / expected 2 blank lines, found 1 (col 1)
+    pylint: invalid-name / Function name "mentionSuggestion" doesn't conform to snake_case naming style
+  Line: 322
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 323
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 324
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 325
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 326
+    pep8: W191 / indentation contains tabs (col 1)
+    pylint: superfluous-parens / Unnecessary parens after 'print' keyword
+  Line: 327
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 328
+    pep8: W191 / indentation contains tabs (col 1)
+
+codeschool/admin.py
+  Line: 1
+    pylint: unused-import / Unused admin imported from django.contrib
+
+codeschool/models.py
+  Line: 1
+    pylint: unused-import / Unused models imported from django.db
+  Line: 10
+    pylint: trailing-newlines / Trailing newlines
+
+codeschool/urls.py
+  Line: 3
+    pylint: wrong-import-order / third party import "from django.views.generic import TemplateView" should be placed before "from .views import index, BlogPostView, EventListView"
+  Line: 8
+    pep8: W191 / indentation contains tabs (col 1)
+    pep8: E231 / missing whitespace after ',' (col 11)
+  Line: 9
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 10
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 11
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 12
+    pep8: W191 / indentation contains tabs (col 1)
+    pep8: E501 / line too long (105 > 99 characters) (col 100)
+  Line: 13
+    pep8: W191 / indentation contains tabs (col 1)
+    pep8: E501 / line too long (108 > 99 characters) (col 100)
+  Line: 14
+    pep8: W191 / indentation contains tabs (col 1)
+    pep8: E501 / line too long (108 > 99 characters) (col 100)
+  Line: 15
+    pep8: W191 / indentation contains tabs (col 1)
+    pep8: E501 / line too long (105 > 99 characters) (col 100)
+  Line: 16
+    pep8: W191 / indentation contains tabs (col 1)
+    pep8: E501 / line too long (120 > 99 characters) (col 100)
+  Line: 17
+    pep8: W191 / indentation contains tabs (col 1)
+    pep8: E501 / line too long (123 > 99 characters) (col 100)
+  Line: 18
+    pep8: W191 / indentation contains tabs (col 1)
+    pep8: E501 / line too long (138 > 99 characters) (col 100)
+
+codeschool/views.py
+  Line: 13
+    pep8: E302 / expected 2 blank lines, found 1 (col 1)
+  Line: 14
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 15
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 16
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 17
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 18
+    pep8: W191 / indentation contains tabs (col 1)
+    pep8: E501 / line too long (101 > 99 characters) (col 100)
+    pep8: E231 / missing whitespace after ',' (col 23)
+  Line: 20
+    pep8: E302 / expected 2 blank lines, found 1 (col 1)
+    pylint: too-many-ancestors / Too many ancestors (10/7)
+  Line: 22
+    pep8: W191 / indentation contains tabs (col 1)
+    pep8: E231 / missing whitespace after ',' (col 27)
+  Line: 23
+    pep8: W191 / indentation contains tabs (col 1)
+    pep8: E231 / missing whitespace after ',' (col 31)
+  Line: 24
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 25
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 28
+    pylint: too-many-ancestors / Too many ancestors (10/7)
+  Line: 30
+    pep8: W191 / indentation contains tabs (col 1)
+    pep8: E231 / missing whitespace after ',' (col 27)
+  Line: 31
+    pep8: W191 / indentation contains tabs (col 1)
+    pep8: E231 / missing whitespace after ',' (col 32)
+  Line: 32
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 33
+    pep8: W191 / indentation contains tabs (col 1)
+
+cogitans/admin.py
+  Line: 1
+    pylint: unused-import / Unused admin imported from django.contrib
+
+cogitans/models.py
+  Line: 1
+    pylint: unused-import / Unused models imported from django.db
+
+cogitans/urls.py
+  Line: 7
+    pep8: W191 / indentation contains tabs (col 1)
+    pep8: E231 / missing whitespace after ',' (col 11)
+  Line: 8
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 9
+    pep8: W191 / indentation contains tabs (col 1)
+
+cogitans/views.py
+  Line: 11
+    pep8: E302 / expected 2 blank lines, found 1 (col 1)
+  Line: 12
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 13
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 14
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 15
+    pep8: W191 / indentation contains tabs (col 1)
+    pep8: E201 / whitespace after '{' (col 54)
+    pep8: E231 / missing whitespace after ',' (col 23)
+  Line: 18
+    pylint: too-many-ancestors / Too many ancestors (10/7)
+  Line: 20
+    pep8: W191 / indentation contains tabs (col 1)
+    pep8: E231 / missing whitespace after ',' (col 27)
+  Line: 21
+    pep8: W191 / indentation contains tabs (col 1)
+    pep8: E231 / missing whitespace after ',' (col 31)
+  Line: 22
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 23
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 26
+    pylint: too-many-ancestors / Too many ancestors (10/7)
+  Line: 28
+    pep8: W191 / indentation contains tabs (col 1)
+    pep8: E231 / missing whitespace after ',' (col 27)
+  Line: 29
+    pep8: W191 / indentation contains tabs (col 1)
+    pep8: E231 / missing whitespace after ',' (col 32)
+  Line: 30
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 31
+    pep8: W191 / indentation contains tabs (col 1)
+
+community/admin.py
+  Line: 1
+    pylint: unused-import / Unused admin imported from django.contrib
+
+community/models.py
+  Line: 1
+    pylint: unused-import / Unused models imported from django.db
+
+community/views.py
+  Line: 1
+    pylint: unused-import / Unused redirect imported from django.shortcuts
+  Line: 2
+    pylint: import-error / Unable to import 'django.urls'
+    pylint: unused-import / Unused reverse imported from django.urls
+  Line: 4
+    pylint: unused-import / Unused ListView imported from django.views.generic
+  Line: 6
+    pylint: unused-import / Unused User imported from django.contrib.auth.models
+  Line: 7
+    pylint: unused-import / Unused login_required imported from django.contrib.auth.decorators
+  Line: 15
+    pylint: wrong-import-order / standard import "from itertools import chain" should be placed before "from django.shortcuts import render, redirect, get_object_or_404, HttpResponse"
+    pylint: unused-import / Unused chain imported from itertools
+  Line: 27
+    pep8: N802 / function name should be lowercase (col 5)
+    pep8: E302 / expected 2 blank lines, found 1 (col 1)
+    pylint: invalid-name / Function name "contentForCommunity" doesn't conform to snake_case naming style
+  Line: 29
+    pep8: E251 / unexpected spaces around keyword / parameter equals (col 47)
+  Line: 30
+    pep8: E251 / unexpected spaces around keyword / parameter equals (col 50)
+  Line: 33
+    pylint: unused-variable / Unused variable 'upvotes' (col 4)
+  Line: 46
+    pep8: E303 / too many blank lines (2) (col 5)
+    pep8: E203 / whitespace before ':' (col 22)
+    pylint: bad-whitespace / No space allowed before :
+    for blog in blogs :
+                      ^
+  Line: 47
+    pep8: E201 / whitespace after '(' (col 50)
+    pep8: E202 / whitespace before ')' (col 69)
+    pep8: E251 / unexpected spaces around keyword / parameter equals (col 56)
+  Line: 48
+    pep8: E203 / whitespace before ',' (col 66)
+    pep8: E251 / unexpected spaces around keyword / parameter equals (col 53)
+  Line: 52
+    pep8: E251 / unexpected spaces around keyword / parameter equals (col 55)
+  Line: 53
+    pep8: E251 / unexpected spaces around keyword / parameter equals (col 53)
+  Line: 56
+    pep8: E203 / whitespace before ',' (col 112)
+    pep8: E203 / whitespace before ':' (col 129)
+    pep8: E501 / line too long (145 > 99 characters) (col 100)
+    pep8: E231 / missing whitespace after ':' (col 60)
+  Line: 58
+    pep8: N802 / function name should be lowercase (col 5)
+    pep8: E302 / expected 2 blank lines, found 1 (col 1)
+    pep8: E203 / whitespace before ':' (col 26)
+    pylint: bad-whitespace / No space allowed before :
+def toggleUpvote(request) :
+                          ^
+    pylint: invalid-name / Function name "toggleUpvote" doesn't conform to snake_case naming style
+  Line: 60
+    pep8: E203 / whitespace before ':' (col 34)
+    pylint: superfluous-parens / Unnecessary parens after 'if' keyword
+    pylint: bad-whitespace / No space allowed before :
+    if (request.method == "POST") :
+                                  ^
+  Line: 61
+    pylint: superfluous-parens / Unnecessary parens after 'if' keyword
+  Line: 62
+    pep8: E201 / whitespace after '{' (col 34)
+    pep8: E202 / whitespace before '}' (col 49)
+    pep8: E703 / statement ends with a semicolon (col 52)
+    pylint: bad-whitespace / No space allowed after bracket
+            return JsonResponse({ 'user': 'none' });
+                                ^
+  Line: 66
+    pep8: E251 / unexpected spaces around keyword / parameter equals (col 46)
+  Line: 68
+    pep8: E203 / whitespace before ':' (col 29)
+    pylint: superfluous-parens / Unnecessary parens after 'if' keyword
+    pylint: bad-whitespace / No space allowed before :
+        if (blog_state == 0) :
+                             ^
+  Line: 69
+    pep8: E201 / whitespace after '(' (col 35)
+    pep8: E203 / whitespace before ',' (col 59)
+    pep8: E202 / whitespace before ')' (col 80)
+    pep8: E251 / unexpected spaces around keyword / parameter equals (col 44)
+  Line: 73
+    pep8: E251 / unexpected spaces around keyword / parameter equals (col 25)
+  Line: 74
+    pep8: E251 / unexpected spaces around keyword / parameter equals (col 25)
+  Line: 75
+    pep8: E251 / unexpected spaces around keyword / parameter equals (col 25)
+  Line: 79
+    pep8: E203 / whitespace before ':' (col 13)
+    pylint: bad-whitespace / No space allowed before :
+        else :
+             ^
+  Line: 80
+    pep8: E201 / whitespace after '(' (col 32)
+    pep8: E203 / whitespace before ',' (col 56)
+    pep8: E202 / whitespace before ')' (col 77)
+    pep8: E251 / unexpected spaces around keyword / parameter equals (col 41)
+  Line: 85
+    pep8: E251 / unexpected spaces around keyword / parameter equals (col 29)
+  Line: 86
+    pep8: E251 / unexpected spaces around keyword / parameter equals (col 29)
+  Line: 87
+    pep8: E251 / unexpected spaces around keyword / parameter equals (col 29)
+  Line: 89
+    pylint: bare-except / No exception type(s) specified (col 16)
+  Line: 90
+    pylint: superfluous-parens / Unnecessary parens after 'print' keyword
+  Line: 92
+    pep8: E251 / unexpected spaces around keyword / parameter equals (col 50)
+
+droidclub/admin.py
+  Line: 1
+    pylint: unused-import / Unused admin imported from django.contrib
+
+droidclub/models.py
+  Line: 1
+    pylint: unused-import / Unused models imported from django.db
+
+droidclub/urls.py
+  Line: 7
+    pep8: W191 / indentation contains tabs (col 1)
+    pep8: E231 / missing whitespace after ',' (col 11)
+  Line: 8
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 9
+    pep8: W191 / indentation contains tabs (col 1)
+
+droidclub/views.py
+  Line: 11
+    pep8: E302 / expected 2 blank lines, found 1 (col 1)
+  Line: 12
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 13
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 14
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 15
+    pep8: W191 / indentation contains tabs (col 1)
+    pep8: E231 / missing whitespace after ',' (col 23)
+  Line: 18
+    pylint: too-many-ancestors / Too many ancestors (10/7)
+  Line: 20
+    pep8: W191 / indentation contains tabs (col 1)
+    pep8: E231 / missing whitespace after ',' (col 27)
+  Line: 21
+    pep8: W191 / indentation contains tabs (col 1)
+    pep8: E231 / missing whitespace after ',' (col 31)
+  Line: 22
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 23
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 26
+    pylint: too-many-ancestors / Too many ancestors (10/7)
+  Line: 28
+    pep8: W191 / indentation contains tabs (col 1)
+    pep8: E231 / missing whitespace after ',' (col 27)
+  Line: 29
+    pep8: W191 / indentation contains tabs (col 1)
+    pep8: E231 / missing whitespace after ',' (col 32)
+  Line: 30
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 31
+    pep8: W191 / indentation contains tabs (col 1)
+
+ecell/admin.py
+  Line: 1
+    pylint: unused-import / Unused admin imported from django.contrib
+
+ecell/models.py
+  Line: 1
+    pylint: unused-import / Unused models imported from django.db
+
+ecell/urls.py
+  Line: 7
+    pep8: W191 / indentation contains tabs (col 1)
+    pep8: E231 / missing whitespace after ',' (col 11)
+  Line: 8
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 9
+    pep8: W191 / indentation contains tabs (col 1)
+
+ecell/views.py
+  Line: 11
+    pep8: E302 / expected 2 blank lines, found 1 (col 1)
+  Line: 12
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 13
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 14
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 15
+    pep8: W191 / indentation contains tabs (col 1)
+    pep8: E231 / missing whitespace after ',' (col 23)
+  Line: 18
+    pylint: too-many-ancestors / Too many ancestors (10/7)
+  Line: 20
+    pep8: W191 / indentation contains tabs (col 1)
+    pep8: E231 / missing whitespace after ',' (col 27)
+  Line: 21
+    pep8: W191 / indentation contains tabs (col 1)
+    pep8: E231 / missing whitespace after ',' (col 31)
+  Line: 22
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 23
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 26
+    pylint: too-many-ancestors / Too many ancestors (10/7)
+  Line: 28
+    pep8: W191 / indentation contains tabs (col 1)
+    pep8: E231 / missing whitespace after ',' (col 27)
+  Line: 29
+    pep8: W191 / indentation contains tabs (col 1)
+    pep8: E231 / missing whitespace after ',' (col 32)
+  Line: 30
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 31
+    pep8: W191 / indentation contains tabs (col 1)
+
+electrotech/admin.py
+  Line: 1
+    pylint: unused-import / Unused admin imported from django.contrib
+
+electrotech/models.py
+  Line: 1
+    pylint: unused-import / Unused models imported from django.db
+
+electrotech/urls.py
+  Line: 7
+    pep8: W191 / indentation contains tabs (col 1)
+    pep8: E231 / missing whitespace after ',' (col 11)
+  Line: 8
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 9
+    pep8: W191 / indentation contains tabs (col 1)
+
+electrotech/views.py
+  Line: 11
+    pep8: E302 / expected 2 blank lines, found 1 (col 1)
+  Line: 12
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 13
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 14
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 15
+    pep8: W191 / indentation contains tabs (col 1)
+    pep8: E231 / missing whitespace after ',' (col 23)
+  Line: 18
+    pylint: too-many-ancestors / Too many ancestors (10/7)
+  Line: 20
+    pep8: W191 / indentation contains tabs (col 1)
+    pep8: E231 / missing whitespace after ',' (col 27)
+  Line: 21
+    pep8: W191 / indentation contains tabs (col 1)
+    pep8: E231 / missing whitespace after ',' (col 31)
+  Line: 22
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 23
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 26
+    pylint: too-many-ancestors / Too many ancestors (10/7)
+  Line: 28
+    pep8: W191 / indentation contains tabs (col 1)
+    pep8: E231 / missing whitespace after ',' (col 27)
+  Line: 29
+    pep8: W191 / indentation contains tabs (col 1)
+    pep8: E231 / missing whitespace after ',' (col 32)
+  Line: 30
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 31
+    pep8: W191 / indentation contains tabs (col 1)
+
+event/admin.py
+  Line: 6
+    pep8: E231 / missing whitespace after ',' (col 69)
+    pep8: E251 / unexpected spaces around keyword / parameter equals (col 47)
+
+event/models.py
+  Line: 6
+    pep8: E302 / expected 2 blank lines, found 1 (col 1)
+    pylint: model-missing-unicode / No __unicode__ method on model (Event)
+  Line: 7
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 8
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 9
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 10
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 11
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 12
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 13
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 14
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 15
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 17
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 18
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 19
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 20
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 21
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 22
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 23
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 24
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 26
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 27
+    pep8: W191 / indentation contains tabs (col 1)
+    pep8: E126 / continuation line over-indented for hanging indent (col 4)
+  Line: 28
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 29
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 30
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 31
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 32
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 33
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 34
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 36
+    pep8: W191 / indentation contains tabs (col 1)
+    pep8: E126 / continuation line over-indented for hanging indent (col 3)
+  Line: 38
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 40
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 41
+    pep8: W191 / indentation contains tabs (col 1)
+    pylint: undefined-variable / Undefined variable 'reverse' (col 9)
+  Line: 43
+    pep8: W191 / indentation contains tabs (col 1)
+    pylint: arguments-differ / Parameters differ from overridden 'save' method (col 1)
+  Line: 44
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 45
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 46
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 49
+    pep8: W191 / indentation contains tabs (col 1)
+    pep8: E303 / too many blank lines (2) (col 2)
+  Line: 50
+    pep8: W191 / indentation contains tabs (col 1)
+
+event/urls.py
+  Line: 8
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 9
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 10
+    pep8: W191 / indentation contains tabs (col 1)
+    pep8: W293 / blank line contains whitespace (col 1)
+
+event/views.py
+  Line: 1
+    pylint: unused-import / Unused render imported from django.shortcuts
+  Line: 5
+    pylint: wrong-import-order / first party import "from log.models import UserProfile" should be placed before "from .models import Event"
+    pylint: unused-import / Unused UserProfile imported from log.models
+  Line: 8
+    pep8: E302 / expected 2 blank lines, found 1 (col 1)
+    pylint: too-many-ancestors / Too many ancestors (9/7)
+  Line: 9
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 10
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 11
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 14
+    pylint: too-many-ancestors / Too many ancestors (9/7)
+  Line: 15
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 16
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 17
+    pep8: W191 / indentation contains tabs (col 1)
+
+home/admin.py
+  Line: 2
+    pep8: E261 / at least two spaces before inline comment (col 25)
+    pep8: E262 / inline comment should start with '# ' (col 25)
+
+home/models.py
+  Line: 6
+    pep8: E302 / expected 2 blank lines, found 1 (col 1)
+    pylint: model-missing-unicode / No __unicode__ method on model (Contact)
+  Line: 7
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 8
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 9
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 10
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 12
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 13
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 15
+    pep8: E302 / expected 2 blank lines, found 1 (col 1)
+    pylint: model-missing-unicode / No __unicode__ method on model (Club)
+  Line: 16
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 17
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 18
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 20
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 21
+    pep8: W191 / indentation contains tabs (col 1)
+
+home/urls.py
+  Line: 1
+    pylint: unused-import / Unused include imported from django.conf.urls
+  Line: 2
+    pep8: E261 / at least two spaces before inline comment (col 77)
+    pep8: E262 / inline comment should start with '# ' (col 77)
+  Line: 7
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 8
+    pep8: W191 / indentation contains tabs (col 1)
+    pep8: E231 / missing whitespace after ',' (col 24)
+  Line: 9
+    pep8: W191 / indentation contains tabs (col 1)
+    pep8: E202 / whitespace before ')' (col 88)
+    pylint: bad-whitespace / No space allowed before bracket
+	url(r'^responsible_disclosure$', responsible_disclosure, name='responsible_disclosure' ),
+                                                                                        ^
+  Line: 10
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 13
+    pep8: W191 / indentation contains tabs (col 1)
+
+home/views.py
+  Line: 1
+    pylint: unused-import / Unused HttpResponse imported from django.shortcuts
+    pep8: E231 / missing whitespace after ',' (col 36)
+  Line: 2
+    pylint: unused-import / Unused login_required imported from django.contrib.auth.decorators
+  Line: 4
+    pep8: E261 / at least two spaces before inline comment (col 25)
+    pep8: E262 / inline comment should start with '# ' (col 25)
+  Line: 5
+    pylint: wrong-import-order / first party import "from blog.models import BlogPost" should be placed before "from .models import Club"
+  Line: 7
+    pylint: wrong-import-order / first party import "from log.models import UserProfile" should be placed before "from .models import Club"
+    pylint: unused-import / Unused UserProfile imported from log.models
+  Line: 8
+    pylint: ungrouped-imports / Imports from package django are not grouped
+    pylint: wrong-import-order / third party import "from django.contrib.auth.models import User" should be placed before "from blog.models import BlogPost"
+    pylint: unused-import / Unused User imported from django.contrib.auth.models
+  Line: 10
+    pylint: wrong-import-order / first party import "from event.models import Event" should be placed before "from .models import Club"
+  Line: 14
+    pep8: E302 / expected 2 blank lines, found 1 (col 1)
+  Line: 15
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 16
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 17
+    pep8: W191 / indentation contains tabs (col 1)
+    pep8: E116 / unexpected indentation (comment) (col 3)
+  Line: 18
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 19
+    pep8: W191 / indentation contains tabs (col 1)
+    pep8: E501 / line too long (153 > 99 characters) (col 100)
+    pep8: E231 / missing whitespace after ',' (col 32)
+  Line: 20
+    pep8: W191 / indentation contains tabs (col 1)
+    pep8: E231 / missing whitespace after ',' (col 26)
+  Line: 21
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 22
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 23
+    pep8: W191 / indentation contains tabs (col 1)
+    pep8: E202 / whitespace before '}' (col 90)
+    pep8: E231 / missing whitespace after ':' (col 52)
+  Line: 25
+    pep8: E302 / expected 2 blank lines, found 1 (col 1)
+  Line: 26
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 30
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 32
+    pep8: E302 / expected 2 blank lines, found 1 (col 1)
+  Line: 33
+    pep8: W191 / indentation contains tabs (col 1)
+
+latest/admin.py
+  Line: 6
+    pep8: E231 / missing whitespace after ',' (col 74)
+    pep8: E251 / unexpected spaces around keyword / parameter equals (col 52)
+
+latest/models.py
+  Line: None
+    pep8: E101 / indentation contains mixed spaces and tabs (col 1)
+  Line: 5
+    pylint: wrong-import-order / standard import "from datetime import datetime" should be placed before "from django.db import models"
+    pylint: unused-import / Unused datetime imported from datetime
+  Line: 9
+    pep8: E302 / expected 2 blank lines, found 1 (col 1)
+    pep8: E203 / whitespace before ':' (col 31)
+    pylint: model-missing-unicode / No __unicode__ method on model (Latestpost)
+    pylint: bad-whitespace / No space allowed before :
+class Latestpost(models.Model) :
+                               ^
+  Line: 19
+    pep8: W191 / indentation contains tabs (col 1)
+    pep8: W293 / blank line contains whitespace (col 1)
+  Line: 30
+    pep8: W191 / indentation contains tabs (col 1)
+    pep8: E126 / continuation line over-indented for hanging indent (col 4)
+  Line: 31
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 32
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 33
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 34
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 35
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 36
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 37
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 39
+    pep8: W191 / indentation contains tabs (col 1)
+    pep8: E126 / continuation line over-indented for hanging indent (col 3)
+  Line: 44
+    pep8: W191 / indentation contains tabs (col 5)
+    pylint: undefined-variable / Undefined variable 'reverse' (col 12)
+  Line: 46
+    pylint: arguments-differ / Parameters differ from overridden 'save' method (col 4)
+  Line: 47
+    pep8: W191 / indentation contains tabs (col 5)
+  Line: 48
+    pep8: W191 / indentation contains tabs (col 5)
+  Line: 49
+    pep8: W191 / indentation contains tabs (col 5)
+  Line: 52
+    pep8: E303 / too many blank lines (2) (col 5)
+  Line: 53
+    pep8: W191 / indentation contains tabs (col 5)
+
+latest/urls.py
+  Line: 2
+    pep8: E203 / whitespace before ',' (col 39)
+    pylint: bad-whitespace / No space allowed before comma
+from .views import LatestPostsListView , LatestPostsDetailView
+                                       ^
+  Line: 8
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 9
+    pep8: W191 / indentation contains tabs (col 1)
+
+latest/views.py
+  Line: 1
+    pylint: unused-import / Unused render imported from django.shortcuts
+  Line: 7
+    pep8: E302 / expected 2 blank lines, found 1 (col 1)
+    pep8: E203 / whitespace before ':' (col 36)
+    pylint: too-many-ancestors / Too many ancestors (9/7)
+    pylint: bad-whitespace / No space allowed before :
+class LatestPostsListView(ListView) :
+                                    ^
+  Line: 12
+    pep8: E302 / expected 2 blank lines, found 1 (col 1)
+    pep8: E203 / whitespace before ':' (col 40)
+    pylint: too-many-ancestors / Too many ancestors (9/7)
+    pylint: bad-whitespace / No space allowed before :
+class LatestPostsDetailView(DetailView) :
+                                        ^
+  Line: 16
+    pylint: trailing-newlines / Trailing newlines
+
+log/admin.py
+  Line: 5
+    pep8: E203 / whitespace before ',' (col 61)
+    pep8: E501 / line too long (138 > 99 characters) (col 100)
+    pep8: E231 / missing whitespace after ',' (col 54)
+
+log/context_processors.py
+  Line: 1
+    pylint: unused-import / Unused Message imported from models
+  Line: 3
+    pep8: E302 / expected 2 blank lines, found 1 (col 1)
+  Line: 8
+    pylint: bare-except / No exception type(s) specified (col 8)
+  Line: 13
+    pep8: E302 / expected 2 blank lines, found 1 (col 1)
+  Line: 18
+    pep8: E501 / line too long (114 > 99 characters) (col 100)
+  Line: 19
+    pep8: E501 / line too long (110 > 99 characters) (col 100)
+  Line: 20
+    pep8: E501 / line too long (114 > 99 characters) (col 100)
+  Line: 21
+    pep8: E501 / line too long (130 > 99 characters) (col 100)
+  Line: 22
+    pep8: E501 / line too long (124 > 99 characters) (col 100)
+  Line: 31
+    pylint: bare-except / No exception type(s) specified (col 8)
+
+log/forms.py
+  Line: 10
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 11
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 13
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 14
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 15
+    pep8: W191 / indentation contains tabs (col 1)
+    pep8: E261 / at least two spaces before inline comment (col 37)
+    pep8: E231 / missing whitespace after ',' (col 35)
+  Line: 16
+    pep8: W191 / indentation contains tabs (col 1)
+    pep8: E201 / whitespace after '{' (col 14)
+    pylint: bad-whitespace / No space allowed after bracket
+		widgets = { 'username': forms.TextInput(attrs={'placeholder': 'Username'}),
+            ^
+  Line: 17
+    pep8: W191 / indentation contains tabs (col 1)
+    pep8: E128 / continuation line under-indented for visual indent (col 6)
+    pep8: E202 / whitespace before '}' (col 95)
+    pylint: bad-whitespace / No space allowed before bracket
+					'password': forms.PasswordInput(attrs={'placeholder': 'Password', 'class': 'form-control' }),
+                                                                                               ^
+  Line: 18
+    pep8: W191 / indentation contains tabs (col 1)
+    pep8: E128 / continuation line under-indented for visual indent (col 6)
+    pep8: E501 / line too long (100 > 99 characters) (col 100)
+  Line: 19
+    pep8: W191 / indentation contains tabs (col 1)
+    pep8: E128 / continuation line under-indented for visual indent (col 6)
+  Line: 20
+    pep8: W191 / indentation contains tabs (col 1)
+    pep8: E128 / continuation line under-indented for visual indent (col 6)
+    pep8: E501 / line too long (118 > 99 characters) (col 100)
+  Line: 21
+    pep8: W191 / indentation contains tabs (col 1)
+    pep8: E124 / closing bracket does not match visual indentation (col 3)
+  Line: 22
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 23
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 24
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 25
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 26
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 31
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 32
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 33
+    pep8: W191 / indentation contains tabs (col 1)
+    pep8: E261 / at least two spaces before inline comment (col 69)
+    pep8: E501 / line too long (137 > 99 characters) (col 100)
+    pep8: E231 / missing whitespace after ',' (col 67)
+  Line: 34
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 35
+    pep8: W191 / indentation contains tabs (col 1)
+    pep8: E126 / continuation line over-indented for hanging indent (col 6)
+    pep8: E202 / whitespace before '}' (col 86)
+    pylint: bad-whitespace / No space allowed before bracket
+					'email': forms.TextInput(attrs={'placeholder': 'E-mail', 'class': 'form-control' }),
+                                                                                      ^
+  Line: 36
+    pep8: W191 / indentation contains tabs (col 1)
+    pep8: E202 / whitespace before '}' (col 95)
+    pylint: bad-whitespace / No space allowed before bracket
+					'institution': forms.TextInput(attrs={'placeholder': 'Institute', 'class': 'form-control' }),
+                                                                                               ^
+  Line: 37
+    pep8: W191 / indentation contains tabs (col 1)
+    pep8: E202 / whitespace before '}' (col 87)
+    pylint: bad-whitespace / No space allowed before bracket
+					'course': forms.TextInput(attrs={'placeholder': 'Course', 'class': 'form-control' }),
+                                                                                       ^
+  Line: 38
+    pep8: W191 / indentation contains tabs (col 1)
+    pep8: E501 / line too long (118 > 99 characters) (col 100)
+  Line: 43
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 45
+    pep8: E302 / expected 2 blank lines, found 1 (col 1)
+  Line: 46
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 47
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 48
+    pep8: W191 / indentation contains tabs (col 1)
+    pep8: E501 / line too long (143 > 99 characters) (col 100)
+    pep8: E231 / missing whitespace after ',' (col 142)
+  Line: 49
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 50
+    pep8: W191 / indentation contains tabs (col 1)
+    pep8: E126 / continuation line over-indented for hanging indent (col 6)
+    pep8: E202 / whitespace before '}' (col 95)
+    pylint: bad-whitespace / No space allowed before bracket
+					'institution': forms.TextInput(attrs={'placeholder': 'Institute', 'class': 'form-control' }),
+                                                                                               ^
+  Line: 51
+    pep8: W191 / indentation contains tabs (col 1)
+    pep8: E202 / whitespace before '}' (col 87)
+    pylint: bad-whitespace / No space allowed before bracket
+					'course': forms.TextInput(attrs={'placeholder': 'Course', 'class': 'form-control' }),
+                                                                                       ^
+  Line: 52
+    pep8: W191 / indentation contains tabs (col 1)
+    pep8: E202 / whitespace before '}' (col 88)
+    pylint: bad-whitespace / No space allowed before bracket
+					'name': forms.TextInput(attrs={'placeholder': 'Your Name', 'class': 'form-control' }),
+                                                                                        ^
+  Line: 53
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 54
+    pep8: W191 / indentation contains tabs (col 1)
+    pep8: E202 / whitespace before '}' (col 92)
+    pylint: bad-whitespace / No space allowed before bracket
+					'bio': forms.TextInput(attrs={'placeholder': 'About yourself', 'class': 'form-control' }),
+                                                                                            ^
+  Line: 55
+    pep8: W191 / indentation contains tabs (col 1)
+    pep8: E202 / whitespace before '}' (col 91)
+    pylint: bad-whitespace / No space allowed before bracket
+					'facebook': forms.TextInput(attrs={'placeholder': 'Facebook', 'class': 'form-control' }),
+                                                                                           ^
+  Line: 56
+    pep8: W191 / indentation contains tabs (col 1)
+    pep8: E202 / whitespace before '}' (col 87)
+    pylint: bad-whitespace / No space allowed before bracket
+					'github': forms.TextInput(attrs={'placeholder': 'Github', 'class': 'form-control' }),
+                                                                                       ^
+  Line: 57
+    pep8: W191 / indentation contains tabs (col 1)
+    pep8: E202 / whitespace before '}' (col 91)
+    pylint: bad-whitespace / No space allowed before bracket
+					'linkedIn': forms.TextInput(attrs={'placeholder': 'LinkedIn', 'class': 'form-control' }),
+                                                                                           ^
+  Line: 58
+    pep8: W191 / indentation contains tabs (col 1)
+    pep8: E202 / whitespace before '}' (col 89)
+    pylint: bad-whitespace / No space allowed before bracket
+					'twitter': forms.TextInput(attrs={'placeholder': 'Twitter', 'class': 'form-control' }),
+                                                                                         ^
+  Line: 59
+    pep8: W191 / indentation contains tabs (col 1)
+    pep8: E202 / whitespace before '}' (col 85)
+    pylint: bad-whitespace / No space allowed before bracket
+					'email': forms.TextInput(attrs={'placeholder': 'Email', 'class': 'form-control' }),
+                                                                                     ^
+  Line: 60
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 62
+    pep8: E302 / expected 2 blank lines, found 1 (col 1)
+  Line: 63
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 64
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 65
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 66
+    pep8: W191 / indentation contains tabs (col 1)
+    pep8: E201 / whitespace after '{' (col 14)
+    pep8: E202 / whitespace before '}' (col 117)
+    pep8: E501 / line too long (118 > 99 characters) (col 100)
+    pylint: bad-whitespace / No space allowed after bracket
+		widgets = { 'reason': forms.Textarea(attrs={'placeholder': 'If related to some post, provide respective link(s)'}) }
+            ^
+  Line: 68
+    pep8: E302 / expected 2 blank lines, found 1 (col 1)
+  Line: 69
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 70
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 71
+    pep8: W191 / indentation contains tabs (col 1)
+
+log/models.py
+  Line: None
+    pep8: E101 / indentation contains mixed spaces and tabs (col 2)
+  Line: 2
+    pylint: wrong-import-order / standard import "import datetime" should be placed before "from django.db import models"
+  Line: 8
+    pylint: wrong-import-order / third party import "from ckeditor_uploader.fields import RichTextUploadingField" should be placed before "from home.models import Club"
+  Line: 10
+    pylint: wrong-import-order / third party import "from cloudinary.models import CloudinaryField" should be placed before "from home.models import Club"
+  Line: 17
+    pep8: E303 / too many blank lines (4) (col 1)
+    pylint: model-missing-unicode / No __unicode__ method on model (UserProfile)
+  Line: 18
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 19
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 20
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 21
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 22
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 24
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 25
+    pep8: W191 / indentation contains tabs (col 1)
+    pep8: E226 / missing whitespace around arithmetic operator (col 78)
+  Line: 26
+    pep8: W191 / indentation contains tabs (col 1)
+    pep8: E231 / missing whitespace after ',' (col 28)
+  Line: 28
+    pep8: W191 / indentation contains tabs (col 1)
+    pep8: E501 / line too long (112 > 99 characters) (col 100)
+  Line: 30
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 31
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 32
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 33
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 34
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 35
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 36
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 37
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 39
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 40
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 41
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 42
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 43
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 45
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 46
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 48
+    pep8: E302 / expected 2 blank lines, found 1 (col 1)
+    pylint: model-missing-unicode / No __unicode__ method on model (Report)
+  Line: 49
+    pep8: W191 / indentation contains tabs (col 1)
+    pep8: E501 / line too long (103 > 99 characters) (col 100)
+  Line: 50
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 51
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 52
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 54
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 55
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 57
+    pep8: E302 / expected 2 blank lines, found 1 (col 1)
+    pylint: model-missing-unicode / No __unicode__ method on model (Message)
+  Line: 58
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 59
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 60
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 61
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 63
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 64
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 66
+    pep8: E302 / expected 2 blank lines, found 1 (col 1)
+    pylint: model-missing-unicode / No __unicode__ method on model (Notification)
+  Line: 67
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 68
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 69
+    pep8: W191 / indentation contains tabs (col 1)
+    pep8: E501 / line too long (110 > 99 characters) (col 100)
+  Line: 70
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 71
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 72
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 73
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 74
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 75
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 76
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 77
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 78
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 79
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 80
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 81
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 82
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 84
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 85
+    pep8: W191 / indentation contains tabs (col 1)
+
+log/tokens.py
+  Line: 6
+    pylint: no-self-use / Method could be a function (col 4)
+  Line: 11
+    pep8: E305 / expected 2 blank lines after class or function definition, found 0 (col 1)
+    pylint: invalid-name / Constant name "account_activation_token" doesn't conform to UPPER_CASE naming style
+
+log/urls.py
+  Line: 8
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 9
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 10
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 11
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 12
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 13
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 14
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 15
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 17
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 19
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 20
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 21
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 22
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 24
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 25
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 26
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 27
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 28
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 29
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 30
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 31
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 34
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 35
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 36
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 37
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 38
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 39
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 40
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 41
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 42
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 43
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 44
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 45
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 46
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 47
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 51
+    pep8: W191 / indentation contains tabs (col 1)
+
+log/views.py
+  Line: None
+    pep8: E101 / indentation contains mixed spaces and tabs (col 1)
+  Line: 2
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 3
+    pylint: bare-except / No exception type(s) specified
+  Line: 4
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 8
+    pylint: unused-import / Unused get_object_or_404 imported from django.shortcuts
+  Line: 10
+    pep8: E203 / whitespace before ',' (col 52)
+    pep8: E231 / missing whitespace after ',' (col 53)
+  Line: 13
+    pylint: unused-import / Unused reverse_lazy imported from django.core.urlresolvers
+  Line: 14
+    pylint: unused-import / Unused ValidationError imported from django.core.exceptions
+  Line: 15
+    pylint: import-error / Unable to import 'django.contrib.auth.mixins'
+    pylint: unused-import / Unused LoginRequiredMixin imported from django.contrib.auth.mixins
+  Line: 16
+    pylint: unused-import / Unused timezone imported from django.utils
+  Line: 25
+    pylint: wrong-import-order / standard import "from datetime import datetime" should be placed before "from django.shortcuts import render, redirect, get_object_or_404"
+  Line: 28
+    pylint: unused-import / Unused DetailView imported from django.views.generic
+  Line: 29
+    pylint: unused-import / Unused DeleteView imported from django.views.generic.edit
+  Line: 31
+    pep8: E261 / at least two spaces before inline comment (col 95)
+    pep8: E262 / inline comment should start with '# ' (col 95)
+    pep8: E501 / line too long (136 > 99 characters) (col 100)
+  Line: 35
+    pylint: unused-import / Unused Report imported from models
+  Line: 36
+    pylint: wrong-import-order / first party import "from blog.models import BlogPost, Comments, Upvote" should be placed before "from .forms import UserForm, UserProfileForm, UserProfileEditForm, UserReportForm, MessageForm"
+  Line: 43
+    pep8: E303 / too many blank lines (4) (col 1)
+  Line: 45
+    pep8: E302 / expected 2 blank lines, found 4 (col 1)
+  Line: 46
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 47
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 48
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 49
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 50
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 51
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 53
+    pep8: W191 / indentation contains tabs (col 1)
+    pep8: E203 / whitespace before ':' (col 54)
+    pylint: bad-whitespace / No space allowed before :
+		if user_form.is_valid() and profile_form.is_valid() :
+                                                      ^
+  Line: 55
+    pep8: W191 / indentation contains tabs (col 1)
+    pylint: pointless-string-statement / String statement has no effect (col 3)
+  Line: 56
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 57
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 58
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 59
+    pep8: E122 / continuation line missing indentation or outdented (col 17)
+  Line: 60
+    pep8: E122 / continuation line missing indentation or outdented (col 17)
+  Line: 61
+    pep8: E122 / continuation line missing indentation or outdented (col 13)
+  Line: 62
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 63
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 64
+    pep8: W191 / indentation contains tabs (col 1)
+    pylint: bare-except / No exception type(s) specified (col 3)
+  Line: 65
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 66
+    pep8: W191 / indentation contains tabs (col 1)
+    pep8: E222 / multiple spaces after operator (col 9)
+    pylint: bad-whitespace / Exactly one space required after assignment
+			req =  urllib2.Request(url, data=data)
+       ^
+  Line: 67
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 68
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 69
+    pep8: W191 / indentation contains tabs (col 1)
+    pylint: pointless-string-statement / String statement has no effect (col 3)
+  Line: 70
+    pep8: W191 / indentation contains tabs (col 1)
+    pylint: no-else-return / Unnecessary "else" after "return" (col 3)
+  Line: 71
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 72
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 73
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 75
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 76
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 77
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 78
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 79
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 80
+    pep8: W191 / indentation contains tabs (col 1)
+    pep8: E128 / continuation line under-indented for visual indent (col 11)
+  Line: 81
+    pep8: W191 / indentation contains tabs (col 1)
+    pep8: E124 / closing bracket does not match visual indentation (col 11)
+  Line: 82
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 83
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 85
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 86
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 87
+    pep8: W191 / indentation contains tabs (col 1)
+    pep8: E231 / missing whitespace after ',' (col 27)
+  Line: 88
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 94
+    pep8: W191 / indentation contains tabs (col 1)
+    pep8: E303 / too many blank lines (5) (col 3)
+  Line: 95
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 96
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 97
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 98
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 99
+    pep8: W191 / indentation contains tabs (col 1)
+    pep8: E501 / line too long (139 > 99 characters) (col 100)
+    pep8: E231 / missing whitespace after ':' (col 73)
+  Line: 101
+    pep8: E302 / expected 2 blank lines, found 1 (col 1)
+  Line: 103
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 104
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 105
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 106
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 107
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 108
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 109
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 110
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 111
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 112
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 113
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 114
+    pep8: W191 / indentation contains tabs (col 1)
+    pep8: E501 / line too long (153 > 99 characters) (col 100)
+    pep8: E231 / missing whitespace after ':' (col 68)
+  Line: 115
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 116
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 117
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 118
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 120
+    pep8: E302 / expected 2 blank lines, found 1 (col 1)
+  Line: 122
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 123
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 124
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 125
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 126
+    pep8: W191 / indentation contains tabs (col 1)
+    pylint: bare-except / No exception type(s) specified (col 1)
+  Line: 127
+    pep8: W191 / indentation contains tabs (col 1)
+    pep8: E225 / missing whitespace around operator (col 15)
+  Line: 128
+    pep8: W191 / indentation contains tabs (col 1)
+    pylint: no-else-return / Unnecessary "else" after "return" (col 1)
+  Line: 129
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 130
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 131
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 132
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 133
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 135
+    pep8: E302 / expected 2 blank lines, found 1 (col 1)
+  Line: 136
+    pep8: W191 / indentation contains tabs (col 1)
+    pylint: no-else-return / Unnecessary "else" after "return" (col 1)
+  Line: 137
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 138
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 140
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 142
+    pep8: W191 / indentation contains tabs (col 1)
+    pylint: no-else-return / Unnecessary "else" after "return" (col 2)
+  Line: 143
+    pep8: W191 / indentation contains tabs (col 1)
+    pylint: no-else-return / Unnecessary "else" after "return" (col 3)
+  Line: 144
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 145
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 146
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 147
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 148
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 149
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 151
+    pep8: W191 / indentation contains tabs (col 1)
+    pylint: no-else-return / Unnecessary "else" after "return" (col 4)
+  Line: 152
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 153
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 154
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 155
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 156
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 157
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 158
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 159
+    pep8: W191 / indentation contains tabs (col 1)
+    pylint: superfluous-parens / Unnecessary parens after 'print' keyword
+  Line: 160
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 161
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 162
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 163
+    pep8: W191 / indentation contains tabs (col 1)
+    pylint: no-else-return / Unnecessary "else" after "return" (col 2)
+  Line: 164
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 165
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 166
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 168
+    pep8: E302 / expected 2 blank lines, found 1 (col 1)
+  Line: 170
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 171
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 175
+    pep8: N802 / function name should be lowercase (col 5)
+    pylint: invalid-name / Function name "userProfileEdit" doesn't conform to snake_case naming style
+  Line: 176
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 177
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 178
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 179
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 180
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 181
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 182
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 183
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 184
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 185
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 186
+    pep8: W191 / indentation contains tabs (col 1)
+    pep8: E501 / line too long (100 > 99 characters) (col 100)
+    pep8: E231 / missing whitespace after ':' (col 62)
+  Line: 190
+    pep8: N802 / function name should be lowercase (col 5)
+    pylint: invalid-name / Function name "sendMessage" doesn't conform to snake_case naming style
+  Line: 191
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 192
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 193
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 194
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 195
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 196
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 197
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 198
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 200
+    pep8: W191 / indentation contains tabs (col 1)
+    pylint: unused-variable / Unused variable 'notification' (col 3)
+  Line: 201
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 202
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 203
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 205
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 207
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 208
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 212
+    pep8: N802 / function name should be lowercase (col 5)
+    pylint: invalid-name / Function name "userReport" doesn't conform to snake_case naming style
+  Line: 213
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 214
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 215
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 216
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 217
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 218
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 219
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 220
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 221
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 223
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 224
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 225
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 227
+    pep8: E302 / expected 2 blank lines, found 1 (col 1)
+  Line: 228
+    pylint: unused-variable / Unused variable 'u' (col 4)
+    pylint: invalid-name / Variable name "u" doesn't conform to snake_case naming style (col 4)
+  Line: 230
+    pep8: E302 / expected 2 blank lines, found 1 (col 1)
+  Line: 231
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 232
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 233
+    pep8: W191 / indentation contains tabs (col 1)
+    pep8: E722 / do not use bare 'except' (col 2)
+  Line: 234
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 235
+    pep8: W191 / indentation contains tabs (col 1)
+    pep8: E251 / unexpected spaces around keyword / parameter equals (col 53)
+  Line: 236
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 237
+    pep8: W191 / indentation contains tabs (col 1)
+    pep8: E201 / whitespace after '(' (col 44)
+    pep8: E202 / whitespace before ')' (col 63)
+    pep8: E251 / unexpected spaces around keyword / parameter equals (col 50)
+  Line: 238
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 239
+    pep8: W191 / indentation contains tabs (col 1)
+    pylint: unused-variable / Unused variable 'userprofile' (col 2)
+  Line: 240
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 241
+    pep8: W191 / indentation contains tabs (col 1)
+    pylint: bare-except / No exception type(s) specified (col 1)
+  Line: 242
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 246
+    pep8: E303 / too many blank lines (3) (col 1)
+  Line: 247
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 248
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 250
+    pep8: E302 / expected 2 blank lines, found 1 (col 1)
+  Line: 251
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 252
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 253
+    pep8: W191 / indentation contains tabs (col 1)
+    pylint: redefined-outer-name / Redefining name 'messages' from outer scope (line 18) (col 2)
+  Line: 254
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 255
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 256
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 258
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 260
+    pep8: E302 / expected 2 blank lines, found 1 (col 1)
+  Line: 261
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 262
+    pep8: W191 / indentation contains tabs (col 1)
+    pep8: E251 / unexpected spaces around keyword / parameter equals (col 53)
+  Line: 263
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 264
+    pep8: W191 / indentation contains tabs (col 1)
+    pep8: E201 / whitespace after '(' (col 44)
+    pep8: E202 / whitespace before ')' (col 63)
+    pep8: E251 / unexpected spaces around keyword / parameter equals (col 50)
+  Line: 265
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 267
+    pep8: E302 / expected 2 blank lines, found 1 (col 1)
+  Line: 268
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 269
+    pep8: W191 / indentation contains tabs (col 1)
+    pylint: redefined-outer-name / Redefining name 'comments' from outer scope (line 267) (col 1)
+  Line: 270
+    pep8: W191 / indentation contains tabs (col 1)
+
+manage.py
+  Line: 14
+    pylint: unused-import / Unused import django (col 12)
+
+oslc/admin.py
+  Line: 1
+    pylint: unused-import / Unused admin imported from django.contrib
+
+oslc/models.py
+  Line: 1
+    pylint: unused-import / Unused models imported from django.db
+
+oslc/urls.py
+  Line: 7
+    pep8: W191 / indentation contains tabs (col 1)
+    pep8: E231 / missing whitespace after ',' (col 11)
+  Line: 8
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 9
+    pep8: W191 / indentation contains tabs (col 1)
+
+oslc/views.py
+  Line: 11
+    pep8: E302 / expected 2 blank lines, found 1 (col 1)
+  Line: 12
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 13
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 14
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 15
+    pep8: W191 / indentation contains tabs (col 1)
+    pep8: E231 / missing whitespace after ',' (col 23)
+  Line: 18
+    pylint: too-many-ancestors / Too many ancestors (10/7)
+  Line: 20
+    pep8: W191 / indentation contains tabs (col 1)
+    pep8: E231 / missing whitespace after ',' (col 27)
+  Line: 21
+    pep8: W191 / indentation contains tabs (col 1)
+    pep8: E231 / missing whitespace after ',' (col 31)
+  Line: 22
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 23
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 26
+    pylint: too-many-ancestors / Too many ancestors (10/7)
+  Line: 28
+    pep8: W191 / indentation contains tabs (col 1)
+    pep8: E231 / missing whitespace after ',' (col 27)
+  Line: 29
+    pep8: W191 / indentation contains tabs (col 1)
+    pep8: E231 / missing whitespace after ',' (col 32)
+  Line: 30
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 31
+    pep8: W191 / indentation contains tabs (col 1)
+
+renderedusict/admin.py
+  Line: 1
+    pylint: unused-import / Unused admin imported from django.contrib
+
+renderedusict/models.py
+  Line: 1
+    pylint: unused-import / Unused models imported from django.db
+
+renderedusict/urls.py
+  Line: 7
+    pep8: W191 / indentation contains tabs (col 1)
+    pep8: E231 / missing whitespace after ',' (col 11)
+  Line: 8
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 9
+    pep8: W191 / indentation contains tabs (col 1)
+
+renderedusict/views.py
+  Line: 11
+    pep8: E302 / expected 2 blank lines, found 1 (col 1)
+  Line: 12
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 13
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 14
+    pep8: W191 / indentation contains tabs (col 1)
+    pylint: undefined-variable / Undefined variable 'Events' (col 9)
+  Line: 15
+    pep8: W191 / indentation contains tabs (col 1)
+    pep8: E231 / missing whitespace after ',' (col 23)
+  Line: 18
+    pylint: too-many-ancestors / Too many ancestors (10/7)
+  Line: 20
+    pep8: W191 / indentation contains tabs (col 1)
+    pep8: E231 / missing whitespace after ',' (col 27)
+  Line: 21
+    pep8: W191 / indentation contains tabs (col 1)
+    pep8: E231 / missing whitespace after ',' (col 31)
+  Line: 22
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 23
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 26
+    pylint: too-many-ancestors / Too many ancestors (10/7)
+  Line: 28
+    pep8: W191 / indentation contains tabs (col 1)
+    pep8: E231 / missing whitespace after ',' (col 27)
+  Line: 29
+    pep8: W191 / indentation contains tabs (col 1)
+    pep8: E231 / missing whitespace after ',' (col 32)
+  Line: 30
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 31
+    pep8: W191 / indentation contains tabs (col 1)
+
+techspace/forms.py
+  Line: 3
+    pylint: unused-import / Unused messages imported from django.contrib
+  Line: 4
+    pylint: unused-import / Unused HttpResponseRedirect imported from django.http
+  Line: 5
+    pylint: unused-import / Unused reverse imported from django.core.urlresolvers
+  Line: 8
+    pep8: E302 / expected 2 blank lines, found 1 (col 1)
+
+techspace/settings.py
+  Line: 31
+    dodgy: secret / Possible hardcoded secret key
+  Line: 32
+    dodgy: secret / Possible hardcoded secret key
+  Line: 96
+    pep8: E231 / missing whitespace after ',' (col 30)
+  Line: 114
+    pep8: E501 / line too long (101 > 99 characters) (col 100)
+  Line: 170
+    pep8: E231 / missing whitespace after ',' (col 31)
+  Line: 182
+    pep8: E501 / line too long (106 > 99 characters) (col 100)
+  Line: 189
+    pep8: E231 / missing whitespace after ':' (col 16)
+  Line: 190
+    pep8: E231 / missing whitespace after ':' (col 17)
+  Line: 194
+    pep8: E225 / missing whitespace around operator (col 10)
+  Line: 195
+    pep8: E225 / missing whitespace around operator (col 11)
+  Line: 201
+    dodgy: password / Possible hardcoded password
+  Line: 215
+    pep8: E121 / continuation line under-indented for hanging indent (col 3)
+    pep8: E251 / unexpected spaces around keyword / parameter equals (col 13)
+  Line: 216
+    pep8: E251 / unexpected spaces around keyword / parameter equals (col 10)
+  Line: 217
+    pep8: E251 / unexpected spaces around keyword / parameter equals (col 13)
+  Line: 218
+    pep8: E251 / unexpected spaces around keyword / parameter equals (col 9)
+
+techspace/sitemaps.py
+  Line: 2
+    pylint: import-error / Unable to import 'django.urls'
+  Line: 5
+    pep8: E302 / expected 2 blank lines, found 1 (col 1)
+  Line: 14
+    pylint: arguments-differ / Parameters differ from overridden 'location' method (col 4)
+    pep8: E231 / missing whitespace after ',' (col 22)
+
+techspace/urls.py
+  Line: None
+    pep8: E101 / indentation contains mixed spaces and tabs (col 1)
+  Line: 1
+    pep8: E231 / missing whitespace after ',' (col 33)
+  Line: 7
+    pep8: E501 / line too long (122 > 99 characters) (col 100)
+  Line: 11
+    pylint: wrong-import-order / third party import "from ckeditor_uploader import views as uploader_views" should be placed before "from log import views as log_views"
+  Line: 14
+    pylint: wrong-import-order / first party import "from techspace.sitemaps import PostSitemap, StaticViewSitemap" should be placed before "from . import views"
+  Line: 15
+    pylint: wrong-import-order / first party import "from blog import views as blog_views" should be placed before "from . import views"
+  Line: 18
+    pep8: E225 / missing whitespace around operator (col 9)
+    pylint: invalid-name / Constant name "sitemaps" doesn't conform to UPPER_CASE naming style
+  Line: 19
+    pep8: W191 / indentation contains tabs (col 1)
+    pep8: E231 / missing whitespace after ':' (col 9)
+  Line: 20
+    pep8: W191 / indentation contains tabs (col 1)
+    pep8: E231 / missing whitespace after ':' (col 10)
+  Line: 24
+    pep8: W191 / indentation contains tabs (col 1)
+    pep8: E126 / continuation line over-indented for hanging indent (col 2)
+    pep8: E231 / missing whitespace after ':' (col 43)
+  Line: 25
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 26
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 27
+    pep8: E131 / continuation line unaligned for hanging indent (col 5)
+  Line: 29
+    pep8: E131 / continuation line unaligned for hanging indent (col 5)
+  Line: 30
+    pep8: E131 / continuation line unaligned for hanging indent (col 5)
+  Line: 31
+    pep8: E131 / continuation line unaligned for hanging indent (col 5)
+  Line: 32
+    pep8: E131 / continuation line unaligned for hanging indent (col 5)
+  Line: 33
+    pep8: E131 / continuation line unaligned for hanging indent (col 5)
+  Line: 34
+    pep8: E131 / continuation line unaligned for hanging indent (col 5)
+  Line: 35
+    pep8: E131 / continuation line unaligned for hanging indent (col 5)
+  Line: 36
+    pep8: E131 / continuation line unaligned for hanging indent (col 5)
+  Line: 37
+    pep8: E131 / continuation line unaligned for hanging indent (col 5)
+  Line: 38
+    pep8: E131 / continuation line unaligned for hanging indent (col 5)
+  Line: 39
+    pep8: E131 / continuation line unaligned for hanging indent (col 5)
+  Line: 40
+    pep8: E131 / continuation line unaligned for hanging indent (col 5)
+  Line: 41
+    pep8: E131 / continuation line unaligned for hanging indent (col 5)
+  Line: 42
+    pep8: E131 / continuation line unaligned for hanging indent (col 5)
+  Line: 43
+    pep8: E131 / continuation line unaligned for hanging indent (col 5)
+  Line: 44
+    pep8: E131 / continuation line unaligned for hanging indent (col 5)
+  Line: 45
+    pep8: E131 / continuation line unaligned for hanging indent (col 5)
+  Line: 46
+    pep8: W191 / indentation contains tabs (col 1)
+    pep8: E203 / whitespace before ',' (col 99)
+    pep8: E501 / line too long (124 > 99 characters) (col 100)
+    pep8: E231 / missing whitespace after ',' (col 42)
+  Line: 47
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 48
+    pep8: W191 / indentation contains tabs (col 1)
+    pep8: E501 / line too long (129 > 99 characters) (col 100)
+  Line: 49
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 50
+    pep8: E131 / continuation line unaligned for hanging indent (col 5)
+  Line: 51
+    pep8: E131 / continuation line unaligned for hanging indent (col 5)
+    pep8: E501 / line too long (136 > 99 characters) (col 100)
+  Line: 53
+    pep8: E131 / continuation line unaligned for hanging indent (col 5)
+  Line: 55
+    pep8: E131 / continuation line unaligned for hanging indent (col 5)
+  Line: 57
+    pep8: E131 / continuation line unaligned for hanging indent (col 5)
+  Line: 62
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 63
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 64
+    pep8: E712 / comparison to False should be 'if cond is False:' or 'if not cond:' (col 19)
+    pylint: singleton-comparison / Comparison to False should be 'not expr' or 'expr is False' (col 3)
+  Line: 65
+    pylint: invalid-name / Constant name "handler404" doesn't conform to UPPER_CASE naming style (col 4)
+
+techspace/views.py
+  Line: None
+    pep8: E101 / indentation contains mixed spaces and tabs (col 1)
+  Line: 2
+    pylint: unused-import / Unused RequestContext imported from django.template
+  Line: 15
+    pep8: W293 / blank line contains whitespace (col 1)
+  Line: 16
+    pep8: E302 / expected 2 blank lines, found 1 (col 1)
+  Line: 17
+    pep8: E231 / missing whitespace after ',' (col 26)
+  Line: 19
+    pep8: E302 / expected 2 blank lines, found 1 (col 1)
+  Line: 20
+    pep8: W191 / indentation contains tabs (col 1)
+    pep8: E231 / missing whitespace after ',' (col 23)
+
+turingai/admin.py
+  Line: 1
+    pylint: unused-import / Unused admin imported from django.contrib
+
+turingai/models.py
+  Line: 1
+    pylint: unused-import / Unused models imported from django.db
+
+turingai/urls.py
+  Line: 7
+    pep8: W191 / indentation contains tabs (col 1)
+    pep8: E231 / missing whitespace after ',' (col 11)
+  Line: 8
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 9
+    pep8: W191 / indentation contains tabs (col 1)
+
+turingai/views.py
+  Line: 11
+    pep8: E302 / expected 2 blank lines, found 1 (col 1)
+  Line: 12
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 13
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 14
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 15
+    pep8: W191 / indentation contains tabs (col 1)
+    pep8: E231 / missing whitespace after ',' (col 23)
+  Line: 18
+    pylint: too-many-ancestors / Too many ancestors (10/7)
+  Line: 20
+    pep8: W191 / indentation contains tabs (col 1)
+    pep8: E231 / missing whitespace after ',' (col 27)
+  Line: 21
+    pep8: W191 / indentation contains tabs (col 1)
+    pep8: E231 / missing whitespace after ',' (col 31)
+  Line: 22
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 23
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 26
+    pylint: too-many-ancestors / Too many ancestors (10/7)
+  Line: 28
+    pep8: W191 / indentation contains tabs (col 1)
+    pep8: E231 / missing whitespace after ',' (col 27)
+  Line: 29
+    pep8: W191 / indentation contains tabs (col 1)
+    pep8: E231 / missing whitespace after ',' (col 32)
+  Line: 30
+    pep8: W191 / indentation contains tabs (col 1)
+  Line: 31
+    pep8: W191 / indentation contains tabs (col 1)
+
+
+
+Check Information
+=================
+         Started: 2018-11-12 20:40:31.136821
+        Finished: 2018-11-12 20:40:48.041851
+      Time Taken: 16.91 seconds
+       Formatter: grouped
+        Profiles: default, strictness_high, strictness_veryhigh, no_doc_warnings, no_test_warnings, no_member_warnings
+      Strictness: high
+  Libraries Used: django
+       Tools Run: dodgy, mccabe, pep8, profile-validator, pyflakes, pylint
+  Messages Found: 1550
+
