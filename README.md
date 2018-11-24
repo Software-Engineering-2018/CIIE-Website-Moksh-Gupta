@@ -1,6 +1,6 @@
 # CIIE-Website
 
-This is repository contains a full project of the Software Engineering with the source code of the website, SRS report, MOM from the customer, Design Document, a Full report, Feedback from customer, etc.
+This is repository contains a full project of the Software Engineering with the source code of the website, SRS report, MOM from the customer, Design Document, a Full report, Feedback from customer, Coding metrics, etc.
 
 To run the website, download the "new_project" and directly run it as it a python3.6 virtualenv.
 
