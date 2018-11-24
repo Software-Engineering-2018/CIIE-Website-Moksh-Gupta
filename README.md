@@ -14,3 +14,12 @@ Step:
 Technologies Used:
 1. python3.6
 2. django 2.0.0
+
+Coding metrics tool used:
+1. Prospector
+2. dodgy
+3. mccabe
+4. pep8
+5. profile-validator
+6. pyflakes
+7. pylint
