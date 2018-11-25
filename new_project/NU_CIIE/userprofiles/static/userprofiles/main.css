@@ -52,9 +52,9 @@ html, body { overflow-x: hidden; }
 /*************************************************************************/
 /*                            Header Start                               */
 /*************************************************************************/
-
+{% load static %}
 header{
-	background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url( Images/re.jpg);
+	background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url( '{% static "userprofiles/re.jpg" %}');
 	height: 100vh;
 	width:100%; 
 	/*Parallax Effect*/
@@ -253,7 +253,7 @@ h3:after{
 
 .team{
 	margin-top:80px;
-	background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(Images/10.jpg);
+	background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url('{% static "userprofiles/10.jpg" %}');
 	padding-top:25px; 
 	padding-bottom:25px;
 	color:white;

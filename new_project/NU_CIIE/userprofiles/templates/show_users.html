@@ -1,4 +1,4 @@
-{% extends 'base.html' %}
+{% extends "base.html" %}
 
 {% block title %}
 Users
@@ -11,7 +11,7 @@ Users
 <div>
 	<h1>Users Registered in {{event.title}}</h1>
 
-	<ul>
+	<ol>
 		{% for user in users %}
 		<li>
 			{{user}} - {{user.name}} - {{user.email}} - {{user.phone_number}} - {{user.course}}
@@ -22,7 +22,7 @@ Users
 		</li>
 		{% endfor %}
 
-	</ul>
+	</ol>
 	
 	<a href="{% url 'eventList' %}">Back to event list</a><br>
 	<a href="{% url 'userDash' %}">Dashboard</a>
