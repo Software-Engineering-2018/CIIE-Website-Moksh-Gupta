@@ -1,3 +1,66 @@
+OUTPUT OF THE METRICS TOOL:
+
+Description about the tool: 
+It computes SLOC and McCabe complexity metrics
+
+Coding Metrics for the Full project
+
+Metrics Summary:
+Files                       Language        SLOC Comment McCabe 
+----- ------------------------------ ----------- ------- ------ 
+    2                            CSS         313      16      0 
+   31                           HTML        1728    2811      0 
+    1                     JavaScript          49      10      5 
+   30                         Python        1058     136     66 
+    2                      Text only           0       0      0 
+----- ------------------------------ ----------- ------- ------ 
+   66                          Total        3148    2973     71 
+
+
+
+
+
+Coding Metrics for the simple_mail app
+
+Metrics Summary:
+Files                       Language        SLOC Comment McCabe 
+----- ------------------------------ ----------- ------- ------ 
+    4                           HTML         815     356      0 
+   16                         Python         639      67     40 
+----- ------------------------------ ----------- ------- ------ 
+   20                          Total        1454     423     40 
+
+
+
+
+Coding Metrics for the userprofiles app
+
+Metrics Summary:
+Files                       Language        SLOC Comment McCabe 
+----- ------------------------------ ----------- ------- ------ 
+    2                            CSS         313      16      0 
+   27                           HTML         913    2455      0 
+    1                     JavaScript          49      10      5 
+    9                         Python         315       7     25 
+    1                      Text only           0       0      0 
+----- ------------------------------ ----------- ------- ------ 
+   40                          Total        1590    2488     30 
+
+
+
+
+
+OUTPUT OF THE PROSPECTOR TOOL:
+
+Description about the tool:
+
+Prospector is a tool to analyse Python code and output information about errors, potential problems, convention violations and complexity.
+
+It brings together the functionality of other Python analysis tools such as Pylint, pep8, and McCabe complexity. See the Supported Tools documentation section for a complete list.
+
+The primary aim of Prospector is to be useful 'out of the box'. A common complaint of other Python analysis tools is that it takes a long time to filter through which errors are relevant or interesting to your own coding style. Prospector provides some default profiles, which hopefully will provide a good starting point and will be useful straight away, and adapts the output depending on the libraries your project uses. 
+
+
 Messages
 ========
 
